@@ -1,0 +1,16 @@
+asr:
+  backend: faster-whisper
+  model: base.en
+  language: en
+  compute_type: default
+normalization:
+  backend: english-basic
+  expand_numbers: true
+optional_metrics:
+  nisqa_v2: true
+  vowel_prolongation: true
+  voice_lens: true
+reporting:
+  question: "How do these voices/models handle messy dialogue text?"
+  group_by_voice: true
+  embed_audio: true

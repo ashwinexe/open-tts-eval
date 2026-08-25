@@ -1,0 +1,602 @@
+{
+  "title": "TTS Assessment Report",
+  "subtitle": "1000 samples",
+  "labels": [
+    "inworld-inworld-tts-1-max"
+  ],
+  "metric_table": {
+    "ci_label": "95% CI",
+    "groups": [
+      {
+        "title": "Accuracy",
+        "colorize": true,
+        "rows": [
+          {
+            "metric": "WER",
+            "key": "wer",
+            "better": "lower",
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.02959856810168941,
+                "lo": 0.021257220426552887,
+                "hi": 0.03967609069906353,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "WER.Insertions",
+            "key": "insertion_rate",
+            "better": "lower",
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.008367073712195664,
+                "lo": 0.0028509948131137156,
+                "hi": 0.016366696570705715,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "WER.Deletions",
+            "key": "deletion_rate",
+            "better": "lower",
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.0035329376505847097,
+                "lo": 0.002313734672190555,
+                "hi": 0.005049319879466938,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "WER.Substitutions",
+            "key": "substitution_rate",
+            "better": "lower",
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.017698556738909032,
+                "lo": 0.014086316853548617,
+                "hi": 0.021648314449186808,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "CER",
+            "key": "cer",
+            "better": "lower",
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.014040834320943435,
+                "lo": 0.008777087910178914,
+                "hi": 0.021942089050532302,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "NISQAv2",
+        "colorize": true,
+        "rows": [
+          {
+            "metric": "MOS",
+            "key": "nisqa_mos",
+            "better": "higher",
+            "cells": [
+              {
+                "na": false,
+                "mean": 4.891714110612869,
+                "lo": 4.878435994458199,
+                "hi": 4.90403728274107,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "coloration",
+            "key": "nisqa_coloration",
+            "better": "higher",
+            "cells": [
+              {
+                "na": false,
+                "mean": 4.521530269622803,
+                "lo": 4.513626507091522,
+                "hi": 4.528818640774489,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "discontinuity",
+            "key": "nisqa_discontinuity",
+            "better": "higher",
+            "cells": [
+              {
+                "na": false,
+                "mean": 4.830023786783219,
+                "lo": 4.8176557327449325,
+                "hi": 4.841448992300034,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "loudness",
+            "key": "nisqa_loudness",
+            "better": "higher",
+            "cells": [
+              {
+                "na": false,
+                "mean": 4.611434384584427,
+                "lo": 4.6013057079076765,
+                "hi": 4.620828622758388,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "noisiness",
+            "key": "nisqa_noisiness",
+            "better": "higher",
+            "cells": [
+              {
+                "na": false,
+                "mean": 4.570510303497314,
+                "lo": 4.5617590517580515,
+                "hi": 4.578698682069779,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Subjective",
+        "colorize": true,
+        "rows": [
+          {
+            "metric": "Chars/sec",
+            "key": "chars_per_second",
+            "better": null,
+            "cells": [
+              {
+                "na": false,
+                "mean": 15.14590160109048,
+                "lo": 14.971707642862892,
+                "hi": 15.314697408146968,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "Arousal",
+            "key": "arousal_proxy",
+            "better": null,
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.09477152034718753,
+                "lo": 0.09396194483267803,
+                "hi": 0.09557138877646973,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "Expressiveness",
+            "key": "expressiveness_proxy",
+            "better": null,
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.9606817772165416,
+                "lo": 0.9515962342383131,
+                "hi": 0.9700334239914087,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Silence",
+        "colorize": false,
+        "rows": [
+          {
+            "metric": "Silence",
+            "key": "silence_ratio",
+            "better": null,
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.22948707912859373,
+                "lo": 0.22726678596750113,
+                "hi": 0.23183344947395723,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "Lead silence (s)",
+            "key": "leading_silence_sec",
+            "better": null,
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.155776,
+                "lo": 0.14839466666666667,
+                "hi": 0.16371200000000002,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "Tail silence (s)",
+            "key": "trailing_silence_sec",
+            "better": null,
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.19424666666666668,
+                "lo": 0.1876028666666667,
+                "hi": 0.20047943333333335,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "health_table": {
+    "good_rate": 0.99,
+    "warn_rate": 0.95,
+    "rows": [
+      {
+        "metric": "Silence",
+        "key": "silence_ratio",
+        "pass_rule": "< 0.45",
+        "cells": [
+          {
+            "na": false,
+            "good_rate": 0.999,
+            "status": "good"
+          }
+        ]
+      },
+      {
+        "metric": "Clipping",
+        "key": "clipping_ratio",
+        "pass_rule": "< 0.001",
+        "cells": [
+          {
+            "na": false,
+            "good_rate": 1.0,
+            "status": "good"
+          }
+        ]
+      },
+      {
+        "metric": "NISQA MOS",
+        "key": "nisqa_mos",
+        "pass_rule": "> 3.3",
+        "cells": [
+          {
+            "na": false,
+            "good_rate": 0.998,
+            "status": "good"
+          }
+        ]
+      },
+      {
+        "metric": "tail click detected",
+        "key": "tail_click_detected",
+        "pass_rule": "not flagged",
+        "cells": [
+          {
+            "na": false,
+            "good_rate": 0.998,
+            "status": "good"
+          }
+        ]
+      },
+      {
+        "metric": "Vowel prolongation",
+        "key": "vowel_prolongation_score",
+        "pass_rule": "≤ 0.8",
+        "cells": [
+          {
+            "na": false,
+            "good_rate": 0.99,
+            "status": "good"
+          }
+        ]
+      }
+    ]
+  },
+  "violations": {
+    "state": "268 violations across 7 metric(s).",
+    "counts": [
+      {
+        "metric": "WER",
+        "warn": 89,
+        "fail": 59,
+        "total": 148
+      },
+      {
+        "metric": "CER",
+        "warn": 47,
+        "fail": 35,
+        "total": 82
+      },
+      {
+        "metric": "Insertions",
+        "warn": 5,
+        "fail": 13,
+        "total": 18
+      },
+      {
+        "metric": "Vowel prolongation",
+        "warn": 0,
+        "fail": 15,
+        "total": 15
+      },
+      {
+        "metric": "NISQA MOS",
+        "warn": 0,
+        "fail": 2,
+        "total": 2
+      },
+      {
+        "metric": "tail click detected",
+        "warn": 0,
+        "fail": 2,
+        "total": 2
+      },
+      {
+        "metric": "Silence",
+        "warn": 1,
+        "fail": 0,
+        "total": 1
+      }
+    ],
+    "examples": {
+      "has_audio": true,
+      "rows": [
+        {
+          "metric": "WER",
+          "voice": "Miranda",
+          "value": "3.154",
+          "expected": "we buried the dog behind the shed the kids still leave it treats",
+          "heard": "we buried the dog behind the shed the kids still leave it treats we are not expecting to …",
+          "audio": "audio/Miranda__utt_0043.wav"
+        },
+        {
+          "metric": "WER",
+          "voice": "Rosalind",
+          "value": "1.333",
+          "expected": "esme esme wait",
+          "heard": "as may as may wait",
+          "audio": "audio/Rosalind__utt_0000.wav"
+        },
+        {
+          "metric": "WER",
+          "voice": "Jarrah",
+          "value": "1.333",
+          "expected": "esme esme wait",
+          "heard": "here's me here's me wait",
+          "audio": "audio/Jarrah__utt_0000.wav"
+        },
+        {
+          "metric": "WER",
+          "voice": "Timothy",
+          "value": "1.333",
+          "expected": "esme esme wait",
+          "heard": "as me as me wait",
+          "audio": "audio/Timothy__utt_0000.wav"
+        },
+        {
+          "metric": "WER",
+          "voice": "Reed",
+          "value": "1.333",
+          "expected": "esme esme wait",
+          "heard": "as me as me wait",
+          "audio": "audio/Reed__utt_0000.wav"
+        },
+        {
+          "metric": "CER",
+          "voice": "Reed",
+          "value": "0.481",
+          "expected": "the offer's still on the table marlowe same terms same handshake all you have to do is fo…",
+          "heard": "the offer's still on the table marlowe same terms same handshake all you have to do is fo…",
+          "audio": "audio/Reed__utt_0080.wav"
+        },
+        {
+          "metric": "CER",
+          "voice": "Tessa",
+          "value": "0.286",
+          "expected": "esme esme wait",
+          "heard": "as me as me wait",
+          "audio": "audio/Tessa__utt_0000.wav"
+        },
+        {
+          "metric": "CER",
+          "voice": "Jarrah",
+          "value": "0.267",
+          "expected": "run damn it run",
+          "heard": "ron dammit ron",
+          "audio": "audio/Jarrah__utt_0002.wav"
+        },
+        {
+          "metric": "CER",
+          "voice": "Jarrah",
+          "value": "0.23",
+          "expected": "the bank called again i let it ring what else is there to say",
+          "heard": "the bank called again what else is there to say",
+          "audio": "audio/Jarrah__utt_0050.wav"
+        },
+        {
+          "metric": "CER",
+          "voice": "Jarrah",
+          "value": "0.229",
+          "expected": "i heard you the first time mr vance",
+          "heard": "i will hurt you the first time mr vance",
+          "audio": "audio/Jarrah__utt_0010.wav"
+        },
+        {
+          "metric": "Insertions",
+          "voice": "Reed",
+          "value": "0.244",
+          "expected": "the town meeting ran past midnight everyone shouting over everyone until old pete stood u…",
+          "heard": "the town meeting ran past midnight everyone shouting over everyone until old pete stood u…",
+          "audio": "audio/Reed__utt_0093.wav"
+        },
+        {
+          "metric": "Insertions",
+          "voice": "Lauren",
+          "value": "0.2",
+          "expected": "she wrote her whole life into those notebooks forty of them stacked in the closet like br…",
+          "heard": "she wrote her whole life into those notebooks forty of them stacked in the closet like br…",
+          "audio": "audio/Lauren__utt_0081.wav"
+        },
+        {
+          "metric": "Insertions",
+          "voice": "Victor",
+          "value": "0.179",
+          "expected": "he used to read to us every night doing all the voices the wolf and the witch and the lit…",
+          "heard": "he used to read to us every night doing all the voices the wolf and the witch and the lit…",
+          "audio": "audio/Victor__utt_0079.wav"
+        },
+        {
+          "metric": "Insertions",
+          "voice": "Oliver",
+          "value": "0.159",
+          "expected": "the way i heard it the meridian burned because somebody wanted it to insurance they whisp…",
+          "heard": "the way i heard it the meridian burned because somebody wanted it to insurance they whisp…",
+          "audio": "audio/Oliver__utt_0096.wav"
+        },
+        {
+          "metric": "Insertions",
+          "voice": "Victor",
+          "value": "0.125",
+          "expected": "deputy reyes found the second body at dawn",
+          "heard": "deputy ray has found the second body at dawn",
+          "audio": "audio/Victor__utt_0024.wav"
+        },
+        {
+          "metric": "Vowel prolongation",
+          "voice": "Victor",
+          "value": "1",
+          "expected": "i keep a list you know everyone who ever laughed at me everyone who looked the other way …",
+          "heard": "i keep a list you know everyone who ever laughed at me everyone who looked the other way …",
+          "audio": "audio/Victor__utt_0083.wav"
+        },
+        {
+          "metric": "Vowel prolongation",
+          "voice": "Miranda",
+          "value": "0.975",
+          "expected": "you want to know why i left the force because i got tired of arresting the wrong people t…",
+          "heard": "you want to know why i left the force because i got tired of arresting the wrong people t…",
+          "audio": "audio/Miranda__utt_0063.wav"
+        },
+        {
+          "metric": "Vowel prolongation",
+          "voice": "Miranda",
+          "value": "0.95",
+          "expected": "cut to the boardroom vance stands at the head of the table knuckles white on the wood the…",
+          "heard": "cut to the boardroom vance stands at the head of the table knuckles white on the wood the…",
+          "audio": "audio/Miranda__utt_0090.wav"
+        },
+        {
+          "metric": "Vowel prolongation",
+          "voice": "Victor",
+          "value": "0.95",
+          "expected": "the town meeting ran past midnight everyone shouting over everyone until old pete stood u…",
+          "heard": "the town meeting ran past midnight everyone shouting over everyone until old pete stood u…",
+          "audio": "audio/Victor__utt_0093.wav"
+        },
+        {
+          "metric": "Vowel prolongation",
+          "voice": "Rosalind",
+          "value": "0.9",
+          "expected": "your mother and i we tried god knows we tried kiddo",
+          "heard": "your mother and i we tried god knows we tried kiddo",
+          "audio": "audio/Rosalind__utt_0045.wav"
+        },
+        {
+          "metric": "NISQA MOS",
+          "voice": "Avery",
+          "value": "2.272",
+          "expected": "not now not now",
+          "heard": "not now not now",
+          "audio": "audio/Avery__utt_0001.wav"
+        },
+        {
+          "metric": "NISQA MOS",
+          "voice": "Oliver",
+          "value": "2.626",
+          "expected": "you think this is a game it's not a game",
+          "heard": "you think this is a game it's not a game",
+          "audio": "audio/Oliver__utt_0014.wav"
+        },
+        {
+          "metric": "tail click detected",
+          "voice": "Timothy",
+          "value": "flagged",
+          "expected": "the verdict came down on a tuesday by wednesday the reporters were gone and i was alone i…",
+          "heard": "the verdict came down on a tuesday by wednesday the reporters were gone and i was alone i…",
+          "audio": "audio/Timothy__utt_0073.wav"
+        },
+        {
+          "metric": "tail click detected",
+          "voice": "Lauren",
+          "value": "flagged",
+          "expected": "he used to read to us every night doing all the voices the wolf and the witch and the lit…",
+          "heard": "he used to read to us every night doing all the voices the wolf and the witch and the lit…",
+          "audio": "audio/Lauren__utt_0079.wav"
+        }
+      ]
+    }
+  }
+}

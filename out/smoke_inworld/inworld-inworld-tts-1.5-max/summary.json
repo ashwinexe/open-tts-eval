@@ -1,0 +1,561 @@
+{
+  "sample_count": 2,
+  "passed": 2,
+  "warned": 0,
+  "failed": 0,
+  "pass_rate": 1.0,
+  "metrics": {
+    "arousal_proxy": {
+      "count": 2,
+      "mean": 0.05932167078765692,
+      "std": 0.0008611664413026218,
+      "median": 0.05932167078765692,
+      "p95": 0.05986971375499475,
+      "min": 0.058712734157281544,
+      "max": 0.059930607418032286,
+      "ci_low": 0.058712734157281544,
+      "ci_high": 0.059930607418032286,
+      "ci_level": 0.95
+    },
+    "cer": {
+      "count": 2,
+      "mean": 0.0,
+      "std": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "ci_level": 0.95
+    },
+    "chars_per_second": {
+      "count": 2,
+      "mean": 8.127776926612531,
+      "std": 1.0616893604455588,
+      "median": 8.127776926612531,
+      "p95": 8.803431898268729,
+      "min": 7.377049180327869,
+      "max": 8.878504672897195,
+      "ci_low": 7.377049180327869,
+      "ci_high": 8.878504672897195,
+      "ci_level": 0.95
+    },
+    "clipping_ratio": {
+      "count": 2,
+      "mean": 0.0,
+      "std": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "ci_level": 0.95
+    },
+    "deletion_rate": {
+      "count": 2,
+      "mean": 0.0,
+      "std": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "ci_level": 0.95
+    },
+    "duration_sec": {
+      "count": 2,
+      "mean": 2.29,
+      "std": 0.21213203435596414,
+      "median": 2.29,
+      "p95": 2.425,
+      "min": 2.14,
+      "max": 2.44,
+      "ci_low": 2.14,
+      "ci_high": 2.44,
+      "ci_level": 0.95
+    },
+    "expressiveness_proxy": {
+      "count": 2,
+      "mean": 1.03919896806264,
+      "std": 0.07993567693589941,
+      "median": 1.03919896806264,
+      "p95": 1.0900697213607402,
+      "min": 0.9826759088425283,
+      "max": 1.0957220272827515,
+      "ci_low": 0.9826759088425283,
+      "ci_high": 1.0957220272827515,
+      "ci_level": 0.95
+    },
+    "insertion_rate": {
+      "count": 2,
+      "mean": 0.0,
+      "std": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "ci_level": 0.95
+    },
+    "leading_silence_sec": {
+      "count": 2,
+      "mean": 0.042666666666666665,
+      "std": 0.0,
+      "median": 0.042666666666666665,
+      "p95": 0.042666666666666665,
+      "min": 0.042666666666666665,
+      "max": 0.042666666666666665,
+      "ci_low": 0.042666666666666665,
+      "ci_high": 0.042666666666666665,
+      "ci_level": 0.95
+    },
+    "length_ratio": {
+      "count": 2,
+      "mean": 1.0,
+      "std": 0.0,
+      "median": 1.0,
+      "p95": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "ci_low": 1.0,
+      "ci_high": 1.0,
+      "ci_level": 0.95
+    },
+    "peak": {
+      "count": 2,
+      "mean": 0.571807861328125,
+      "std": 0.05960171294058973,
+      "median": 0.571807861328125,
+      "p95": 0.6097381591796875,
+      "min": 0.5296630859375,
+      "max": 0.61395263671875,
+      "ci_low": 0.5296630859375,
+      "ci_high": 0.61395263671875,
+      "ci_level": 0.95
+    },
+    "rms": {
+      "count": 2,
+      "mean": 0.08502903953194618,
+      "std": 0.003927417199995213,
+      "median": 0.08502903953194618,
+      "p95": 0.08752843253314495,
+      "min": 0.08225193619728088,
+      "max": 0.08780614286661148,
+      "ci_low": 0.08225193619728088,
+      "ci_high": 0.08780614286661148,
+      "ci_level": 0.95
+    },
+    "silence_ratio": {
+      "count": 2,
+      "mean": 0.2877176855114652,
+      "std": 0.09233086247575532,
+      "median": 0.2877176855114652,
+      "p95": 0.34647668658393344,
+      "min": 0.22242990654205608,
+      "max": 0.35300546448087433,
+      "ci_low": 0.22242990654205608,
+      "ci_high": 0.35300546448087433,
+      "ci_level": 0.95
+    },
+    "substitution_rate": {
+      "count": 2,
+      "mean": 0.0,
+      "std": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "ci_level": 0.95
+    },
+    "tail_click_score": {
+      "count": 2,
+      "mean": 0.0,
+      "std": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "ci_level": 0.95
+    },
+    "trailing_silence_sec": {
+      "count": 2,
+      "mean": 0.22066666666666668,
+      "std": 0.061282587702834124,
+      "median": 0.22066666666666668,
+      "p95": 0.25966666666666666,
+      "min": 0.17733333333333334,
+      "max": 0.264,
+      "ci_low": 0.17733333333333334,
+      "ci_high": 0.264,
+      "ci_level": 0.95
+    },
+    "vowel_prolongation_score": {
+      "count": 2,
+      "mean": 0.2625,
+      "std": 0.017677669529663705,
+      "median": 0.2625,
+      "p95": 0.27375,
+      "min": 0.25,
+      "max": 0.275,
+      "ci_low": 0.25,
+      "ci_high": 0.275,
+      "ci_level": 0.95
+    },
+    "wer": {
+      "count": 2,
+      "mean": 0.0,
+      "std": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "ci_level": 0.95
+    }
+  },
+  "violations": {},
+  "failure_counts": {},
+  "by_voice": {
+    "Oliver": {
+      "sample_count": 2,
+      "passed": 2,
+      "warned": 0,
+      "failed": 0,
+      "pass_rate": 1.0,
+      "metrics": {
+        "arousal_proxy": {
+          "count": 2,
+          "mean": 0.05932167078765692,
+          "std": 0.0008611664413026218,
+          "median": 0.05932167078765692,
+          "p95": 0.05986971375499475,
+          "min": 0.058712734157281544,
+          "max": 0.059930607418032286,
+          "ci_low": 0.058712734157281544,
+          "ci_high": 0.059930607418032286,
+          "ci_level": 0.95
+        },
+        "cer": {
+          "count": 2,
+          "mean": 0.0,
+          "std": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "ci_level": 0.95
+        },
+        "chars_per_second": {
+          "count": 2,
+          "mean": 8.127776926612531,
+          "std": 1.0616893604455588,
+          "median": 8.127776926612531,
+          "p95": 8.803431898268729,
+          "min": 7.377049180327869,
+          "max": 8.878504672897195,
+          "ci_low": 7.377049180327869,
+          "ci_high": 8.878504672897195,
+          "ci_level": 0.95
+        },
+        "clipping_ratio": {
+          "count": 2,
+          "mean": 0.0,
+          "std": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "ci_level": 0.95
+        },
+        "deletion_rate": {
+          "count": 2,
+          "mean": 0.0,
+          "std": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "ci_level": 0.95
+        },
+        "duration_sec": {
+          "count": 2,
+          "mean": 2.29,
+          "std": 0.21213203435596414,
+          "median": 2.29,
+          "p95": 2.425,
+          "min": 2.14,
+          "max": 2.44,
+          "ci_low": 2.14,
+          "ci_high": 2.44,
+          "ci_level": 0.95
+        },
+        "expressiveness_proxy": {
+          "count": 2,
+          "mean": 1.03919896806264,
+          "std": 0.07993567693589941,
+          "median": 1.03919896806264,
+          "p95": 1.0900697213607402,
+          "min": 0.9826759088425283,
+          "max": 1.0957220272827515,
+          "ci_low": 0.9826759088425283,
+          "ci_high": 1.0957220272827515,
+          "ci_level": 0.95
+        },
+        "insertion_rate": {
+          "count": 2,
+          "mean": 0.0,
+          "std": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "ci_level": 0.95
+        },
+        "leading_silence_sec": {
+          "count": 2,
+          "mean": 0.042666666666666665,
+          "std": 0.0,
+          "median": 0.042666666666666665,
+          "p95": 0.042666666666666665,
+          "min": 0.042666666666666665,
+          "max": 0.042666666666666665,
+          "ci_low": 0.042666666666666665,
+          "ci_high": 0.042666666666666665,
+          "ci_level": 0.95
+        },
+        "length_ratio": {
+          "count": 2,
+          "mean": 1.0,
+          "std": 0.0,
+          "median": 1.0,
+          "p95": 1.0,
+          "min": 1.0,
+          "max": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0,
+          "ci_level": 0.95
+        },
+        "peak": {
+          "count": 2,
+          "mean": 0.571807861328125,
+          "std": 0.05960171294058973,
+          "median": 0.571807861328125,
+          "p95": 0.6097381591796875,
+          "min": 0.5296630859375,
+          "max": 0.61395263671875,
+          "ci_low": 0.5296630859375,
+          "ci_high": 0.61395263671875,
+          "ci_level": 0.95
+        },
+        "rms": {
+          "count": 2,
+          "mean": 0.08502903953194618,
+          "std": 0.003927417199995213,
+          "median": 0.08502903953194618,
+          "p95": 0.08752843253314495,
+          "min": 0.08225193619728088,
+          "max": 0.08780614286661148,
+          "ci_low": 0.08225193619728088,
+          "ci_high": 0.08780614286661148,
+          "ci_level": 0.95
+        },
+        "silence_ratio": {
+          "count": 2,
+          "mean": 0.2877176855114652,
+          "std": 0.09233086247575532,
+          "median": 0.2877176855114652,
+          "p95": 0.34647668658393344,
+          "min": 0.22242990654205608,
+          "max": 0.35300546448087433,
+          "ci_low": 0.22242990654205608,
+          "ci_high": 0.35300546448087433,
+          "ci_level": 0.95
+        },
+        "substitution_rate": {
+          "count": 2,
+          "mean": 0.0,
+          "std": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "ci_level": 0.95
+        },
+        "tail_click_score": {
+          "count": 2,
+          "mean": 0.0,
+          "std": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "ci_level": 0.95
+        },
+        "trailing_silence_sec": {
+          "count": 2,
+          "mean": 0.22066666666666668,
+          "std": 0.061282587702834124,
+          "median": 0.22066666666666668,
+          "p95": 0.25966666666666666,
+          "min": 0.17733333333333334,
+          "max": 0.264,
+          "ci_low": 0.17733333333333334,
+          "ci_high": 0.264,
+          "ci_level": 0.95
+        },
+        "vowel_prolongation_score": {
+          "count": 2,
+          "mean": 0.2625,
+          "std": 0.017677669529663705,
+          "median": 0.2625,
+          "p95": 0.27375,
+          "min": 0.25,
+          "max": 0.275,
+          "ci_low": 0.25,
+          "ci_high": 0.275,
+          "ci_level": 0.95
+        },
+        "wer": {
+          "count": 2,
+          "mean": 0.0,
+          "std": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "ci_level": 0.95
+        }
+      },
+      "violations": {}
+    }
+  },
+  "manifest_errors": [],
+  "config": {
+    "asr": {
+      "backend": "faster-whisper",
+      "model": "base.en",
+      "device": "cpu",
+      "compute_type": "int8",
+      "language": "en"
+    },
+    "normalization": {
+      "backend": "english-basic",
+      "plugin": null,
+      "expand_numbers": true
+    },
+    "optional_metrics": {
+      "nisqa_v2": false,
+      "speaker_similarity": false,
+      "vowel_prolongation": true,
+      "voice_lens": true,
+      "open_aligner": false
+    },
+    "thresholds": {
+      "wer": {
+        "warn": 0.05,
+        "fail": 0.1,
+        "warn_below": null,
+        "fail_below": null,
+        "fail_if_true": null
+      },
+      "cer": {
+        "warn": 0.03,
+        "fail": 0.08,
+        "warn_below": null,
+        "fail_below": null,
+        "fail_if_true": null
+      },
+      "insertion_rate": {
+        "warn": 0.03,
+        "fail": 0.08,
+        "warn_below": null,
+        "fail_below": null,
+        "fail_if_true": null
+      },
+      "tail_click_detected": {
+        "warn": null,
+        "fail": null,
+        "warn_below": null,
+        "fail_below": null,
+        "fail_if_true": true
+      },
+      "clipping_ratio": {
+        "warn": 0.001,
+        "fail": 0.01,
+        "warn_below": null,
+        "fail_below": null,
+        "fail_if_true": null
+      },
+      "silence_ratio": {
+        "warn": 0.45,
+        "fail": 0.65,
+        "warn_below": null,
+        "fail_below": null,
+        "fail_if_true": null
+      },
+      "vowel_prolongation_score": {
+        "warn": null,
+        "fail": 0.8,
+        "warn_below": null,
+        "fail_below": null,
+        "fail_if_true": null
+      },
+      "speaker_similarity": {
+        "warn": null,
+        "fail": null,
+        "warn_below": 0.65,
+        "fail_below": 0.55,
+        "fail_if_true": null
+      },
+      "nisqa_mos": {
+        "warn": null,
+        "fail": null,
+        "warn_below": 3.3,
+        "fail_below": 2.8,
+        "fail_if_true": null
+      }
+    },
+    "reporting": {
+      "html": true,
+      "csv": true,
+      "max_worst_samples": 25,
+      "max_violation_examples": 5,
+      "confidence_level": 0.95,
+      "bootstrap_resamples": 2000,
+      "group_by_voice": true,
+      "embed_audio": true,
+      "health_good_rate": 0.99,
+      "health_warn_rate": 0.95,
+      "title": "TTS Assessment Report",
+      "question": "Are these TTS audios acceptable for the configured quality thresholds?"
+    }
+  },
+  "cache": {
+    "hits": 2,
+    "misses": 0,
+    "dir": "out\\smoke_inworld\\inworld-inworld-tts-1.5-max\\.measure_cache"
+  }
+}

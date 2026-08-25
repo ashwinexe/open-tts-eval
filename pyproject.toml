@@ -1,0 +1,60 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "inworld-tts-evaluation-toolkit"
+version = "0.1.0"
+description = "Standalone offline assessment toolkit for TTS audio"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Inworld AI" }]
+dependencies = [
+    "jiwer>=3.0.0",
+    "numpy>=1.24.0",
+    "pydantic>=2.0.0",
+    "pyyaml>=6.0.0",
+    "rich>=13.0.0",
+    "scipy>=1.10.0",
+    "soundfile>=0.12.0",
+    "typer>=0.12.0",
+]
+
+[project.optional-dependencies]
+asr = ["faster-whisper>=1.0.0"]
+quality = ["torch>=2.0.0", "torchmetrics[audio]>=1.4.0"]
+similarity = ["speechbrain>=1.0.0"]
+aligner = ["stable-ts>=2.17.0"]
+dev = ["pytest>=8.0.0"]
+all = [
+    "faster-whisper>=1.0.0",
+    "speechbrain>=1.0.0",
+    "stable-ts>=2.17.0",
+    "torch>=2.0.0",
+    "torchmetrics[audio]>=1.4.0",
+]
+
+[project.scripts]
+tts-assess = "tts_assess.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/tts_assess"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+# scripts/ holds one-off dataset builders whose long text literals are data, not code.
+extend-exclude = ["scripts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# Embeds intentionally minified CSS as single long lines.
+"src/tts_assess/reporting/comparison_html.py" = ["E501"]
+# Typer's API relies on function calls (Argument/Option) in parameter defaults.
+"src/tts_assess/cli.py" = ["B008"]

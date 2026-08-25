@@ -1,0 +1,502 @@
+{
+  "title": "Inworld TTS smoke comparison",
+  "subtitle": null,
+  "question": "Are these TTS audios acceptable for the configured quality thresholds?",
+  "generated": "2026-08-21T18:30:59.795599+00:00",
+  "labels": [
+    "inworld-tts-2",
+    "inworld-tts-1.5-max",
+    "inworld-tts-1-max"
+  ],
+  "metric_table": {
+    "ci_label": "95% CI",
+    "groups": [
+      {
+        "title": "Accuracy",
+        "colorize": true,
+        "rows": [
+          {
+            "metric": "WER",
+            "key": "wer",
+            "better": "lower",
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "best": false,
+                "worst": false,
+                "sig": false
+              },
+              {
+                "na": false,
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "best": false,
+                "worst": false,
+                "sig": false
+              },
+              {
+                "na": false,
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "WER.Insertions",
+            "key": "insertion_rate",
+            "better": "lower",
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "best": false,
+                "worst": false,
+                "sig": false
+              },
+              {
+                "na": false,
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "best": false,
+                "worst": false,
+                "sig": false
+              },
+              {
+                "na": false,
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "WER.Deletions",
+            "key": "deletion_rate",
+            "better": "lower",
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "best": false,
+                "worst": false,
+                "sig": false
+              },
+              {
+                "na": false,
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "best": false,
+                "worst": false,
+                "sig": false
+              },
+              {
+                "na": false,
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "WER.Substitutions",
+            "key": "substitution_rate",
+            "better": "lower",
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "best": false,
+                "worst": false,
+                "sig": false
+              },
+              {
+                "na": false,
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "best": false,
+                "worst": false,
+                "sig": false
+              },
+              {
+                "na": false,
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "CER",
+            "key": "cer",
+            "better": "lower",
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "best": false,
+                "worst": false,
+                "sig": false
+              },
+              {
+                "na": false,
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "best": false,
+                "worst": false,
+                "sig": false
+              },
+              {
+                "na": false,
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Subjective",
+        "colorize": true,
+        "rows": [
+          {
+            "metric": "Chars/sec",
+            "key": "chars_per_second",
+            "better": null,
+            "cells": [
+              {
+                "na": false,
+                "mean": 7.998287543742089,
+                "lo": 7.43801652892562,
+                "hi": 8.558558558558557,
+                "best": false,
+                "worst": false,
+                "sig": false
+              },
+              {
+                "na": false,
+                "mean": 8.127776926612531,
+                "lo": 7.377049180327869,
+                "hi": 8.878504672897195,
+                "best": false,
+                "worst": false,
+                "sig": false
+              },
+              {
+                "na": false,
+                "mean": 9.17386185243328,
+                "lo": 8.653846153846153,
+                "hi": 9.693877551020408,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "Arousal",
+            "key": "arousal_proxy",
+            "better": null,
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.0524979554107734,
+                "lo": 0.051354162557787776,
+                "hi": 0.05364174826375902,
+                "best": false,
+                "worst": false,
+                "sig": false
+              },
+              {
+                "na": false,
+                "mean": 0.05932167078765692,
+                "lo": 0.058712734157281544,
+                "hi": 0.059930607418032286,
+                "best": false,
+                "worst": false,
+                "sig": false
+              },
+              {
+                "na": false,
+                "mean": 0.0605404361573011,
+                "lo": 0.05816713257097107,
+                "hi": 0.06291373974363113,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "Expressiveness",
+            "key": "expressiveness_proxy",
+            "better": null,
+            "cells": [
+              {
+                "na": false,
+                "mean": 1.2098925754148917,
+                "lo": 1.0946999895031686,
+                "hi": 1.3250851613266148,
+                "best": false,
+                "worst": false,
+                "sig": false
+              },
+              {
+                "na": false,
+                "mean": 1.03919896806264,
+                "lo": 0.9826759088425283,
+                "hi": 1.0957220272827515,
+                "best": false,
+                "worst": false,
+                "sig": false
+              },
+              {
+                "na": false,
+                "mean": 1.0083377471288126,
+                "lo": 0.8892420248728324,
+                "hi": 1.1274334693847927,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Silence",
+        "colorize": false,
+        "rows": [
+          {
+            "metric": "Silence",
+            "key": "silence_ratio",
+            "better": null,
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.28301193755739207,
+                "lo": 0.27713498622589533,
+                "hi": 0.28888888888888886,
+                "best": false,
+                "worst": false,
+                "sig": false
+              },
+              {
+                "na": false,
+                "mean": 0.2877176855114652,
+                "lo": 0.22242990654205608,
+                "hi": 0.35300546448087433,
+                "best": false,
+                "worst": false,
+                "sig": false
+              },
+              {
+                "na": false,
+                "mean": 0.2825222396650968,
+                "lo": 0.2163265306122449,
+                "hi": 0.3487179487179487,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "Lead silence (s)",
+            "key": "leading_silence_sec",
+            "better": null,
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "best": false,
+                "worst": false,
+                "sig": false
+              },
+              {
+                "na": false,
+                "mean": 0.042666666666666665,
+                "lo": 0.042666666666666665,
+                "hi": 0.042666666666666665,
+                "best": false,
+                "worst": false,
+                "sig": false
+              },
+              {
+                "na": false,
+                "mean": 0.021333333333333333,
+                "lo": 0.0,
+                "hi": 0.042666666666666665,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "Tail silence (s)",
+            "key": "trailing_silence_sec",
+            "better": null,
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.3786666666666667,
+                "lo": 0.372,
+                "hi": 0.38533333333333336,
+                "best": false,
+                "worst": false,
+                "sig": false
+              },
+              {
+                "na": false,
+                "mean": 0.22066666666666668,
+                "lo": 0.17733333333333334,
+                "hi": 0.264,
+                "best": false,
+                "worst": false,
+                "sig": false
+              },
+              {
+                "na": false,
+                "mean": 0.10533333333333333,
+                "lo": 0.0,
+                "hi": 0.21066666666666667,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "health_table": {
+    "good_rate": 0.99,
+    "warn_rate": 0.95,
+    "rows": [
+      {
+        "metric": "Silence",
+        "key": "silence_ratio",
+        "pass_rule": "< 0.45",
+        "cells": [
+          {
+            "na": false,
+            "good_rate": 1.0,
+            "status": "good"
+          },
+          {
+            "na": false,
+            "good_rate": 1.0,
+            "status": "good"
+          },
+          {
+            "na": false,
+            "good_rate": 1.0,
+            "status": "good"
+          }
+        ]
+      },
+      {
+        "metric": "Clipping",
+        "key": "clipping_ratio",
+        "pass_rule": "< 0.001",
+        "cells": [
+          {
+            "na": false,
+            "good_rate": 1.0,
+            "status": "good"
+          },
+          {
+            "na": false,
+            "good_rate": 1.0,
+            "status": "good"
+          },
+          {
+            "na": false,
+            "good_rate": 1.0,
+            "status": "good"
+          }
+        ]
+      },
+      {
+        "metric": "tail click detected",
+        "key": "tail_click_detected",
+        "pass_rule": "not flagged",
+        "cells": [
+          {
+            "na": false,
+            "good_rate": 1.0,
+            "status": "good"
+          },
+          {
+            "na": false,
+            "good_rate": 1.0,
+            "status": "good"
+          },
+          {
+            "na": false,
+            "good_rate": 1.0,
+            "status": "good"
+          }
+        ]
+      },
+      {
+        "metric": "Vowel prolongation",
+        "key": "vowel_prolongation_score",
+        "pass_rule": "< 0.8",
+        "cells": [
+          {
+            "na": false,
+            "good_rate": 1.0,
+            "status": "good"
+          },
+          {
+            "na": false,
+            "good_rate": 1.0,
+            "status": "good"
+          },
+          {
+            "na": false,
+            "good_rate": 1.0,
+            "status": "good"
+          }
+        ]
+      }
+    ]
+  }
+}

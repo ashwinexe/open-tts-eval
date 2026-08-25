@@ -1,0 +1,54 @@
+# Local cleanup dump (moved-aside files, not part of the repo)
+tmp/
+
+# Local API key files
+*.key
+
+# Audio artifacts (large; regenerate via `tts-assess sample`)
+*.wav
+*.flac
+*.mp3
+*.ogg
+*.opus
+*.m4a
+*.aac
+
+# Measurement cache (regenerable; canonical data is results.jsonl)
+.measure_cache/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+.venv-*/
+env/
+
+# Test / tooling caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Default scratch output dirs
+tts_assess_results/
+tts_samples/
+tts_assess_comparison/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Claude Code local settings (personal)
+.claude/
+
+# Scratch smoke/e2e sampling runs
+out/multi_test/

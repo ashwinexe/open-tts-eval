@@ -1,0 +1,612 @@
+{
+  "title": "TTS Assessment Report",
+  "subtitle": "1000 samples",
+  "labels": [
+    "inworld-inworld-tts-2-preview"
+  ],
+  "metric_table": {
+    "ci_label": "95% CI",
+    "groups": [
+      {
+        "title": "Accuracy",
+        "colorize": true,
+        "rows": [
+          {
+            "metric": "WER",
+            "key": "wer",
+            "better": "lower",
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.019620123094286804,
+                "lo": 0.014336695957260363,
+                "hi": 0.026033009229854336,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "WER.Insertions",
+            "key": "insertion_rate",
+            "better": "lower",
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.004969854335775052,
+                "lo": 0.001825929034378523,
+                "hi": 0.009200344157476505,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "WER.Deletions",
+            "key": "deletion_rate",
+            "better": "lower",
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.0010475325328266503,
+                "lo": 0.0006033326967150498,
+                "hi": 0.0015259305237246413,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "WER.Substitutions",
+            "key": "substitution_rate",
+            "better": "lower",
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.013602736225685102,
+                "lo": 0.010667404697738296,
+                "hi": 0.016857805783320447,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "CER",
+            "key": "cer",
+            "better": "lower",
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.008414992282328834,
+                "lo": 0.005801220185590313,
+                "hi": 0.012044841626519752,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "NISQAv2",
+        "colorize": true,
+        "rows": [
+          {
+            "metric": "MOS",
+            "key": "nisqa_mos",
+            "better": "higher",
+            "cells": [
+              {
+                "na": false,
+                "mean": 4.910954781293869,
+                "lo": 4.899222424799204,
+                "hi": 4.921981447583437,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "coloration",
+            "key": "nisqa_coloration",
+            "better": "higher",
+            "cells": [
+              {
+                "na": false,
+                "mean": 4.517919218063354,
+                "lo": 4.509918225204944,
+                "hi": 4.525767551857233,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "discontinuity",
+            "key": "nisqa_discontinuity",
+            "better": "higher",
+            "cells": [
+              {
+                "na": false,
+                "mean": 4.834555909395218,
+                "lo": 4.824584235018492,
+                "hi": 4.8435337714195255,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "loudness",
+            "key": "nisqa_loudness",
+            "better": "higher",
+            "cells": [
+              {
+                "na": false,
+                "mean": 4.621547755718232,
+                "lo": 4.610338083738089,
+                "hi": 4.632025835984946,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "noisiness",
+            "key": "nisqa_noisiness",
+            "better": "higher",
+            "cells": [
+              {
+                "na": false,
+                "mean": 4.586150002479553,
+                "lo": 4.578835285919905,
+                "hi": 4.5936167167067525,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Subjective",
+        "colorize": true,
+        "rows": [
+          {
+            "metric": "Chars/sec",
+            "key": "chars_per_second",
+            "better": null,
+            "cells": [
+              {
+                "na": false,
+                "mean": 15.104923067239946,
+                "lo": 14.935142165415542,
+                "hi": 15.274021013583173,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "Arousal",
+            "key": "arousal_proxy",
+            "better": null,
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.09263006117527828,
+                "lo": 0.09177535499636183,
+                "hi": 0.09340773981160326,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "Expressiveness",
+            "key": "expressiveness_proxy",
+            "better": null,
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.9541477282492471,
+                "lo": 0.9440873455231688,
+                "hi": 0.9637804963914595,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Silence",
+        "colorize": false,
+        "rows": [
+          {
+            "metric": "Silence",
+            "key": "silence_ratio",
+            "better": null,
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.23011526970011834,
+                "lo": 0.22780702962695673,
+                "hi": 0.2324147247809111,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "Lead silence (s)",
+            "key": "leading_silence_sec",
+            "better": null,
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.10257066666666667,
+                "lo": 0.09727893333333335,
+                "hi": 0.10807466666666667,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "Tail silence (s)",
+            "key": "trailing_silence_sec",
+            "better": null,
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.21489333333333333,
+                "lo": 0.20986896666666668,
+                "hi": 0.22038563333333333,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "health_table": {
+    "good_rate": 0.99,
+    "warn_rate": 0.95,
+    "rows": [
+      {
+        "metric": "Silence",
+        "key": "silence_ratio",
+        "pass_rule": "< 0.45",
+        "cells": [
+          {
+            "na": false,
+            "good_rate": 1.0,
+            "status": "good"
+          }
+        ]
+      },
+      {
+        "metric": "Clipping",
+        "key": "clipping_ratio",
+        "pass_rule": "< 0.001",
+        "cells": [
+          {
+            "na": false,
+            "good_rate": 1.0,
+            "status": "good"
+          }
+        ]
+      },
+      {
+        "metric": "NISQA MOS",
+        "key": "nisqa_mos",
+        "pass_rule": "> 3.3",
+        "cells": [
+          {
+            "na": false,
+            "good_rate": 0.999,
+            "status": "good"
+          }
+        ]
+      },
+      {
+        "metric": "tail click detected",
+        "key": "tail_click_detected",
+        "pass_rule": "not flagged",
+        "cells": [
+          {
+            "na": false,
+            "good_rate": 0.993,
+            "status": "good"
+          }
+        ]
+      },
+      {
+        "metric": "Vowel prolongation",
+        "key": "vowel_prolongation_score",
+        "pass_rule": "≤ 0.8",
+        "cells": [
+          {
+            "na": false,
+            "good_rate": 0.981,
+            "status": "warn"
+          }
+        ]
+      }
+    ]
+  },
+  "violations": {
+    "state": "230 violations across 6 metric(s).",
+    "counts": [
+      {
+        "metric": "WER",
+        "warn": 78,
+        "fail": 42,
+        "total": 120
+      },
+      {
+        "metric": "CER",
+        "warn": 40,
+        "fail": 22,
+        "total": 62
+      },
+      {
+        "metric": "Vowel prolongation",
+        "warn": 0,
+        "fail": 26,
+        "total": 26
+      },
+      {
+        "metric": "Insertions",
+        "warn": 8,
+        "fail": 6,
+        "total": 14
+      },
+      {
+        "metric": "tail click detected",
+        "warn": 0,
+        "fail": 7,
+        "total": 7
+      },
+      {
+        "metric": "NISQA MOS",
+        "warn": 0,
+        "fail": 1,
+        "total": 1
+      }
+    ],
+    "examples": {
+      "has_audio": true,
+      "rows": [
+        {
+          "metric": "WER",
+          "voice": "Rosalind",
+          "value": "1.333",
+          "expected": "esme esme wait",
+          "heard": "as me as me wait",
+          "audio": "audio/Rosalind__utt_0000.wav"
+        },
+        {
+          "metric": "WER",
+          "voice": "Jarrah",
+          "value": "1.333",
+          "expected": "esme esme wait",
+          "heard": "is my is my wait",
+          "audio": "audio/Jarrah__utt_0000.wav"
+        },
+        {
+          "metric": "WER",
+          "voice": "Tessa",
+          "value": "1.333",
+          "expected": "esme esme wait",
+          "heard": "as me as me wait",
+          "audio": "audio/Tessa__utt_0000.wav"
+        },
+        {
+          "metric": "WER",
+          "voice": "Avery",
+          "value": "1.071",
+          "expected": "the storm took the roof the fence and what was left of my patience",
+          "heard": "the storm took the roof the fence and what was left of my patients the storm took the roo…",
+          "audio": "audio/Avery__utt_0047.wav"
+        },
+        {
+          "metric": "WER",
+          "voice": "Reed",
+          "value": "0.857",
+          "expected": "i am not scared of you i stopped being scared a long time ago",
+          "heard": "i am not scared of you i stopped being scared a long time ago i am not scared of you i am…",
+          "audio": "audio/Reed__utt_0035.wav"
+        },
+        {
+          "metric": "CER",
+          "voice": "Reed",
+          "value": "0.397",
+          "expected": "my father built this place with his hands i am not selling it to you",
+          "heard": "my father built this place with his hands i am not selling it to you i am not selling it …",
+          "audio": "audio/Reed__utt_0030.wav"
+        },
+        {
+          "metric": "CER",
+          "voice": "Tessa",
+          "value": "0.257",
+          "expected": "i heard you the first time mr vance",
+          "heard": "i heard you the first time missed events",
+          "audio": "audio/Tessa__utt_0010.wav"
+        },
+        {
+          "metric": "CER",
+          "voice": "Jarrah",
+          "value": "0.154",
+          "expected": "tell halloran the shipment's late again",
+          "heard": "tell halaran the shipment's light again",
+          "audio": "audio/Jarrah__utt_0007.wav"
+        },
+        {
+          "metric": "CER",
+          "voice": "Victor",
+          "value": "0.125",
+          "expected": "he left the engine running and the door wide open like he meant to come right back that w…",
+          "heard": "he left the engine running in the door wide open like he meant to come right back that wa…",
+          "audio": "audio/Victor__utt_0071.wav"
+        },
+        {
+          "metric": "CER",
+          "voice": "Jarrah",
+          "value": "0.111",
+          "expected": "i found her diary under the floorboards i wish to god i had not",
+          "heard": "i found a diary under the floorboards i wished a god i had not",
+          "audio": "audio/Jarrah__utt_0040.wav"
+        },
+        {
+          "metric": "Vowel prolongation",
+          "voice": "Miranda",
+          "value": "1.05",
+          "expected": "you can dress it up however you like but a lie in a nice suit is still a lie and this one…",
+          "heard": "you can dress it up however you like but a lie in a nice suit is still a lie and this one…",
+          "audio": "audio/Miranda__utt_0067.wav"
+        },
+        {
+          "metric": "Vowel prolongation",
+          "voice": "Rosalind",
+          "value": "0.975",
+          "expected": "the whole town knew and nobody said a word that's the part i cannot forgive father domini…",
+          "heard": "the whole town knew and nobody said a word that's the part i cannot forgive father domini…",
+          "audio": "audio/Rosalind__utt_0058.wav"
+        },
+        {
+          "metric": "Vowel prolongation",
+          "voice": "Rosalind",
+          "value": "0.975",
+          "expected": "i traded my wedding ring for a bus ticket and a sandwich best deal i ever made and the wo…",
+          "heard": "i traded my wedding ring for a bus ticket and a sandwich best deal i ever made and the wo…",
+          "audio": "audio/Rosalind__utt_0066.wav"
+        },
+        {
+          "metric": "Vowel prolongation",
+          "voice": "Victor",
+          "value": "0.95",
+          "expected": "you want to know why i left the force because i got tired of arresting the wrong people t…",
+          "heard": "you want to know why i left the force because i got tired of arresting the wrong people t…",
+          "audio": "audio/Victor__utt_0063.wav"
+        },
+        {
+          "metric": "Vowel prolongation",
+          "voice": "Rosalind",
+          "value": "0.95",
+          "expected": "i keep a list you know everyone who ever laughed at me everyone who looked the other way …",
+          "heard": "i keep a list you know everyone who ever laughed at me everyone who looked the other way …",
+          "audio": "audio/Rosalind__utt_0083.wav"
+        },
+        {
+          "metric": "Insertions",
+          "voice": "Jarrah",
+          "value": "0.077",
+          "expected": "you left the gate open and now the horses are halfway to odessa",
+          "heard": "you left the gate open and now the horses are halfway to a desser",
+          "audio": "audio/Jarrah__utt_0052.wav"
+        },
+        {
+          "metric": "Insertions",
+          "voice": "Miranda",
+          "value": "0.077",
+          "expected": "you left the gate open and now the horses are halfway to odessa",
+          "heard": "you left the gate open and now the horses are half way to odessa",
+          "audio": "audio/Miranda__utt_0052.wav"
+        },
+        {
+          "metric": "Insertions",
+          "voice": "Oliver",
+          "value": "0.067",
+          "expected": "i gave you one job one and you brought me a broken radio you bastard",
+          "heard": "if i gave you one job one and you brought me a broken radio you bastard",
+          "audio": "audio/Oliver__utt_0049.wav"
+        },
+        {
+          "metric": "Insertions",
+          "voice": "Oliver",
+          "value": "0.056",
+          "expected": "the calloways moved in last spring all smiles and casseroles by fall the moving trucks we…",
+          "heard": "the calloways moved in last spring all smiles and cast rolls by fall the moving trucks we…",
+          "audio": "audio/Oliver__utt_0077.wav"
+        },
+        {
+          "metric": "Insertions",
+          "voice": "Jarrah",
+          "value": "0.043",
+          "expected": "you keep asking me where i was that night i keep telling you the same thing i was home al…",
+          "heard": "you keep asking me where i was that night but i keep telling you the same thing i was hom…",
+          "audio": "audio/Jarrah__utt_0057.wav"
+        },
+        {
+          "metric": "tail click detected",
+          "voice": "Timothy",
+          "value": "flagged",
+          "expected": "gone all of it gone",
+          "heard": "gone all of it gone",
+          "audio": "audio/Timothy__utt_0003.wav"
+        },
+        {
+          "metric": "tail click detected",
+          "voice": "Timothy",
+          "value": "flagged",
+          "expected": "tell halloran the shipment's late again",
+          "heard": "tell halloran the shipments late again",
+          "audio": "audio/Timothy__utt_0007.wav"
+        },
+        {
+          "metric": "tail click detected",
+          "voice": "Lauren",
+          "value": "flagged",
+          "expected": "table six two coffees black and leave the pot",
+          "heard": "table six two coffees black and leave the pot",
+          "audio": "audio/Lauren__utt_0013.wav"
+        },
+        {
+          "metric": "tail click detected",
+          "voice": "Timothy",
+          "value": "flagged",
+          "expected": "that's not what your brother told me though",
+          "heard": "that's not what your brother told me though",
+          "audio": "audio/Timothy__utt_0018.wav"
+        },
+        {
+          "metric": "tail click detected",
+          "voice": "Lauren",
+          "value": "flagged",
+          "expected": "bianca you still there hello",
+          "heard": "bianca you still there hello",
+          "audio": "audio/Lauren__utt_0021.wav"
+        },
+        {
+          "metric": "NISQA MOS",
+          "voice": "Tessa",
+          "value": "2.755",
+          "expected": "gone all of it gone",
+          "heard": "gone all of it gone",
+          "audio": "audio/Tessa__utt_0003.wav"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "provider": "inworld",
+  "model": "inworld-tts-2-preview",
+  "voices": [
+    "Oliver",
+    "Rosalind",
+    "Avery",
+    "Jarrah",
+    "Victor",
+    "Timothy",
+    "Reed",
+    "Lauren",
+    "Tessa",
+    "Miranda"
+  ],
+  "sample_count": 1000,
+  "error_count": 0,
+  "errors": [],
+  "audio_encoding": "WAV",
+  "sample_rate_hz": 24000
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inworld TTS smoke comparison</title>
+<style>
+:root{--rule:#cfcfcf;--ink:#111;--muted:#777;--best:#e6f2e6;--worst:#f6e7e7;--warn:#faf0d7}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font:15px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:2rem 1.25rem 4rem}
+h1{font-size:1.6rem;font-weight:600;margin:0 0 .15rem;letter-spacing:.01em}
+.sub{color:var(--muted);margin:0 0 1.5rem;font-size:.9rem}
+.question{margin:.5rem 0 1.5rem;font-size:.95rem}
+section{margin:2.25rem 0}
+h2{font-size:1.05rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;border-bottom:2px solid var(--ink);padding-bottom:.35rem;margin:0 0 1rem}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th,td{border:1px solid var(--rule);padding:.4rem .55rem;text-align:center}
+thead,th{}
+tr>th:first-child,td:first-child{text-align:left}
+th{font-weight:600;background:#fafafa}
+th.rowhead{font-weight:500;white-space:nowrap;position:sticky;left:0;background:#fafafa;z-index:1}
+.dir{color:var(--muted);font-weight:400}
+tr.group th{text-align:left;background:#efefef;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:.72rem;color:#333}
+td{vertical-align:middle}
+td .val{display:block;font-size:.95rem;font-weight:600;font-variant-numeric:tabular-nums;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+td .ci{display:block;font-size:.62rem;color:var(--muted);margin-top:.1rem;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.star{color:#000;font-weight:700;margin-left:.1rem}
+td.na{color:#bbb}
+td.rule{text-align:left;color:var(--muted);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.8rem;white-space:nowrap}
+td.txt{text-align:left;font-size:.82rem;max-width:320px;white-space:normal;color:var(--ink)}
+.row-audio{height:1.9rem;max-width:200px}
+.legend b{color:var(--ink)}
+td.best{background:var(--best)}
+td.worst{background:var(--worst)}
+td.good{background:var(--best)}
+td.warn{background:var(--warn)}
+td.fail{background:var(--worst)}
+.legend{color:var(--muted);font-size:.75rem;margin:.6rem 0 0}
+.chip{display:inline-block;width:.7rem;height:.7rem;border:1px solid var(--rule);vertical-align:middle;margin-right:.15rem}
+.chip.best,.chip.good{background:var(--best)}
+.chip.worst,.chip.fail{background:var(--worst)}
+.chip.warn{background:var(--warn)}
+</style>
+</head>
+<body>
+<main>
+  <h1>Inworld TTS smoke comparison</h1>
+  
+  <p class="question">Are these TTS audios acceptable for the configured quality thresholds?</p>
+  <section><h2>Metric Comparison</h2><div class='scroll'><table><tr><th class='rowhead'>metric</th><th>inworld-tts-2</th><th>inworld-tts-1.5-max</th><th>inworld-tts-1-max</th></tr><tr class='group'><th class='rowhead' colspan='4'>Accuracy</th></tr><tr><th class='rowhead'>WER<span class='dir'> ↓</span></th><td class=''><span class='val'>0</span><span class='ci'>0–0</span></td><td class=''><span class='val'>0</span><span class='ci'>0–0</span></td><td class=''><span class='val'>0</span><span class='ci'>0–0</span></td></tr><tr><th class='rowhead'>WER.Insertions<span class='dir'> ↓</span></th><td class=''><span class='val'>0</span><span class='ci'>0–0</span></td><td class=''><span class='val'>0</span><span class='ci'>0–0</span></td><td class=''><span class='val'>0</span><span class='ci'>0–0</span></td></tr><tr><th class='rowhead'>WER.Deletions<span class='dir'> ↓</span></th><td class=''><span class='val'>0</span><span class='ci'>0–0</span></td><td class=''><span class='val'>0</span><span class='ci'>0–0</span></td><td class=''><span class='val'>0</span><span class='ci'>0–0</span></td></tr><tr><th class='rowhead'>WER.Substitutions<span class='dir'> ↓</span></th><td class=''><span class='val'>0</span><span class='ci'>0–0</span></td><td class=''><span class='val'>0</span><span class='ci'>0–0</span></td><td class=''><span class='val'>0</span><span class='ci'>0–0</span></td></tr><tr><th class='rowhead'>CER<span class='dir'> ↓</span></th><td class=''><span class='val'>0</span><span class='ci'>0–0</span></td><td class=''><span class='val'>0</span><span class='ci'>0–0</span></td><td class=''><span class='val'>0</span><span class='ci'>0–0</span></td></tr><tr class='group'><th class='rowhead' colspan='4'>Subjective</th></tr><tr><th class='rowhead'>Chars/sec<span class='dir'></span></th><td class=''><span class='val'>7.998</span><span class='ci'>7.438–8.559</span></td><td class=''><span class='val'>8.128</span><span class='ci'>7.377–8.879</span></td><td class=''><span class='val'>9.174</span><span class='ci'>8.654–9.694</span></td></tr><tr><th class='rowhead'>Arousal<span class='dir'></span></th><td class=''><span class='val'>0.052</span><span class='ci'>0.051–0.054</span></td><td class=''><span class='val'>0.059</span><span class='ci'>0.059–0.06</span></td><td class=''><span class='val'>0.061</span><span class='ci'>0.058–0.063</span></td></tr><tr><th class='rowhead'>Expressiveness<span class='dir'></span></th><td class=''><span class='val'>1.21</span><span class='ci'>1.095–1.325</span></td><td class=''><span class='val'>1.039</span><span class='ci'>0.983–1.096</span></td><td class=''><span class='val'>1.008</span><span class='ci'>0.889–1.127</span></td></tr><tr class='group'><th class='rowhead' colspan='4'>Silence</th></tr><tr><th class='rowhead'>Silence<span class='dir'></span></th><td class=''><span class='val'>0.283</span><span class='ci'>0.277–0.289</span></td><td class=''><span class='val'>0.288</span><span class='ci'>0.222–0.353</span></td><td class=''><span class='val'>0.283</span><span class='ci'>0.216–0.349</span></td></tr><tr><th class='rowhead'>Lead silence (s)<span class='dir'></span></th><td class=''><span class='val'>0</span><span class='ci'>0–0</span></td><td class=''><span class='val'>0.043</span><span class='ci'>0.043–0.043</span></td><td class=''><span class='val'>0.021</span><span class='ci'>0–0.043</span></td></tr><tr><th class='rowhead'>Tail silence (s)<span class='dir'></span></th><td class=''><span class='val'>0.379</span><span class='ci'>0.372–0.385</span></td><td class=''><span class='val'>0.221</span><span class='ci'>0.177–0.264</span></td><td class=''><span class='val'>0.105</span><span class='ci'>0–0.211</span></td></tr></table></div><p class='legend'>Each cell: mean with 95% CI below. <span class='chip best'></span> best &nbsp; <span class='chip worst'></span> worst &nbsp; <span class='star'>*</span> interval does not overlap the best (↓/↑ = better direction). The <i>Others</i> group is shown without best/worst colouring.</p></section>
+  <section><h2>Model Health</h2><div class='scroll'><table><tr><th class='rowhead'>metric</th><th class='rowhead'>pass if</th><th>inworld-tts-2</th><th>inworld-tts-1.5-max</th><th>inworld-tts-1-max</th></tr><tr><th class='rowhead'>Silence</th><td class='rule'>&lt; 0.45</td><td class='good'><span class='val'>100%</span></td><td class='good'><span class='val'>100%</span></td><td class='good'><span class='val'>100%</span></td></tr><tr><th class='rowhead'>Clipping</th><td class='rule'>&lt; 0.001</td><td class='good'><span class='val'>100%</span></td><td class='good'><span class='val'>100%</span></td><td class='good'><span class='val'>100%</span></td></tr><tr><th class='rowhead'>tail click detected</th><td class='rule'>not flagged</td><td class='good'><span class='val'>100%</span></td><td class='good'><span class='val'>100%</span></td><td class='good'><span class='val'>100%</span></td></tr><tr><th class='rowhead'>Vowel prolongation</th><td class='rule'>&lt; 0.8</td><td class='good'><span class='val'>100%</span></td><td class='good'><span class='val'>100%</span></td><td class='good'><span class='val'>100%</span></td></tr></table></div><p class='legend'>Two steps. <b>1 — per sample:</b> a clip <i>passes</i> a metric when its value meets that row's <b>pass if</b> rule (otherwise it warns/fails). <b>2 — per model:</b> each cell is the share of that model's clips that pass, graded <span class='chip good'></span> good (≥99%) &nbsp; <span class='chip warn'></span> warn (≥95%) &nbsp; <span class='chip fail'></span> fail (&lt;95%).</p></section>
+  
+</main>
+</body>
+</html>

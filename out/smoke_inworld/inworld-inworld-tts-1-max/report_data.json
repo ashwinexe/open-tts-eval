@@ -1,0 +1,269 @@
+{
+  "title": "TTS Assessment Report",
+  "subtitle": "2 samples",
+  "question": "Are these TTS audios acceptable for the configured quality thresholds?",
+  "labels": [
+    "inworld-inworld-tts-1-max"
+  ],
+  "metric_table": {
+    "ci_label": "95% CI",
+    "groups": [
+      {
+        "title": "Accuracy",
+        "colorize": true,
+        "rows": [
+          {
+            "metric": "WER",
+            "key": "wer",
+            "better": "lower",
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "WER.Insertions",
+            "key": "insertion_rate",
+            "better": "lower",
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "WER.Deletions",
+            "key": "deletion_rate",
+            "better": "lower",
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "WER.Substitutions",
+            "key": "substitution_rate",
+            "better": "lower",
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "CER",
+            "key": "cer",
+            "better": "lower",
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Subjective",
+        "colorize": true,
+        "rows": [
+          {
+            "metric": "Chars/sec",
+            "key": "chars_per_second",
+            "better": null,
+            "cells": [
+              {
+                "na": false,
+                "mean": 9.17386185243328,
+                "lo": 8.653846153846153,
+                "hi": 9.693877551020408,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "Arousal",
+            "key": "arousal_proxy",
+            "better": null,
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.0605404361573011,
+                "lo": 0.05816713257097107,
+                "hi": 0.06291373974363113,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "Expressiveness",
+            "key": "expressiveness_proxy",
+            "better": null,
+            "cells": [
+              {
+                "na": false,
+                "mean": 1.0083377471288126,
+                "lo": 0.8892420248728324,
+                "hi": 1.1274334693847927,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Silence",
+        "colorize": false,
+        "rows": [
+          {
+            "metric": "Silence",
+            "key": "silence_ratio",
+            "better": null,
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.2825222396650968,
+                "lo": 0.2163265306122449,
+                "hi": 0.3487179487179487,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "Lead silence (s)",
+            "key": "leading_silence_sec",
+            "better": null,
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.021333333333333333,
+                "lo": 0.0,
+                "hi": 0.042666666666666665,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          },
+          {
+            "metric": "Tail silence (s)",
+            "key": "trailing_silence_sec",
+            "better": null,
+            "cells": [
+              {
+                "na": false,
+                "mean": 0.10533333333333333,
+                "lo": 0.0,
+                "hi": 0.21066666666666667,
+                "best": false,
+                "worst": false,
+                "sig": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "health_table": {
+    "good_rate": 0.99,
+    "warn_rate": 0.95,
+    "rows": [
+      {
+        "metric": "Silence",
+        "key": "silence_ratio",
+        "pass_rule": "< 0.45",
+        "cells": [
+          {
+            "na": false,
+            "good_rate": 1.0,
+            "status": "good"
+          }
+        ]
+      },
+      {
+        "metric": "Clipping",
+        "key": "clipping_ratio",
+        "pass_rule": "< 0.001",
+        "cells": [
+          {
+            "na": false,
+            "good_rate": 1.0,
+            "status": "good"
+          }
+        ]
+      },
+      {
+        "metric": "tail click detected",
+        "key": "tail_click_detected",
+        "pass_rule": "not flagged",
+        "cells": [
+          {
+            "na": false,
+            "good_rate": 1.0,
+            "status": "good"
+          }
+        ]
+      },
+      {
+        "metric": "Vowel prolongation",
+        "key": "vowel_prolongation_score",
+        "pass_rule": "< 0.8",
+        "cells": [
+          {
+            "na": false,
+            "good_rate": 1.0,
+            "status": "good"
+          }
+        ]
+      }
+    ]
+  },
+  "violations": {
+    "state": "No configured threshold was violated.",
+    "counts": [],
+    "examples": {
+      "has_audio": false,
+      "rows": []
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "provider": "inworld",
+  "model": "inworld-tts-1-max",
+  "voices": [
+    "Oliver"
+  ],
+  "sample_count": 2,
+  "error_count": 0,
+  "errors": [],
+  "audio_encoding": "WAV",
+  "sample_rate_hz": 24000
+}
