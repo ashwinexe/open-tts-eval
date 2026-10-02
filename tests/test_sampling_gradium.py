@@ -76,13 +76,14 @@ def test_synthesize_payload_and_actual_audio_format(sample_rate):
 @pytest.mark.parametrize("temperature", [0.0, 0.7, 1.5])
 def test_model_temperature_and_custom_voice(temperature):
     transport = FakeTransport([(200, _wav())])
-    GradiumProvider("k", transport=transport).synthesize(
+    result = GradiumProvider("k", transport=transport).synthesize(
         replace(REQ, model_id="custom-model", voice_id="custom-uid", temperature=temperature)
     )
     body = json.loads(transport.calls[0][3])
     assert body["model_name"] == "custom-model" and body["voice_id"] == "custom-uid"
     assert isinstance(body["json_config"], str)
     assert json.loads(body["json_config"]) == {"temp": temperature}
+    assert result.request_sent == {key: value for key, value in body.items() if key != "text"}
 
 
 @pytest.mark.parametrize("temperature", [-0.1, 1.6, float("nan"), float("inf")])
@@ -130,6 +131,14 @@ def test_streaming_wav_with_unknown_length():
 def test_invalid_wav_sample_rate():
     audio = bytearray(_wav())
     struct.pack_into("<I", audio, 24, 0)
+    with pytest.raises(ProviderError, match="invalid WAV"):
+        GradiumProvider("k", transport=FakeTransport([(200, bytes(audio))])).synthesize(REQ)
+
+
+@pytest.mark.parametrize("offset", [22, 34])
+def test_invalid_wav_channels_or_sample_width(offset):
+    audio = bytearray(_streaming_wav())
+    struct.pack_into("<H", audio, offset, 0)
     with pytest.raises(ProviderError, match="invalid WAV"):
         GradiumProvider("k", transport=FakeTransport([(200, bytes(audio))])).synthesize(REQ)
 
@@ -217,6 +226,12 @@ def test_sampling_assessment_and_comparison(tmp_path):
         assert entry["audio_path"].endswith(".wav")
         assert entry["metadata"]["sample_rate_hz"] == 48000
         assert entry["metadata"]["requested_sample_rate_hz"] == 24000
+        assert entry["metadata"]["sent_request"] == {
+            "voice_id": REQ.voice_id,
+            "model_name": "default",
+            "output_format": "wav",
+            "only_audio": True,
+        }
         rows, report = run_assessment(manifest, directory, config, use_cache=False)
         assert report["sample_count"] == 1 and rows[0]["wer"] == 0
         assert (directory / "report.html").exists()

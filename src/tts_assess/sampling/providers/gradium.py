@@ -12,6 +12,7 @@ from tts_assess.sampling.providers.base import (
     SynthesisResult,
     TTSProvider,
     Voice,
+    redact_text,
 )
 
 
@@ -66,8 +67,8 @@ class GradiumProvider(TTSProvider):
                 sample_rate = audio.getframerate()
                 frames = audio.getnframes()
                 frame_size = audio.getnchannels() * audio.getsampwidth()
-                if sample_rate <= 0 or frames <= 0:
-                    raise ValueError("empty audio or invalid sample rate")
+                if sample_rate <= 0 or frames <= 0 or frame_size <= 0:
+                    raise ValueError("empty audio or invalid sample rate/frame size")
                 pcm = audio.readframes(frames)
                 # Streaming WAVs can use 0xFFFFFFFF for an unknown data length.
                 unknown_length = frames == 0xFFFFFFFF // frame_size
@@ -87,7 +88,12 @@ class GradiumProvider(TTSProvider):
                     data = fixed.getvalue()
         except (wave.Error, EOFError, ValueError, RuntimeError) as exc:
             raise ProviderError(f"Gradium returned invalid WAV audio: {exc}") from exc
-        return SynthesisResult(audio=data, audio_encoding="WAV", sample_rate_hz=sample_rate)
+        return SynthesisResult(
+            audio=data,
+            audio_encoding="WAV",
+            sample_rate_hz=sample_rate,
+            request_sent=redact_text(payload),
+        )
 
     def list_voices(self) -> list[Voice]:
         status, data = _http.call(
